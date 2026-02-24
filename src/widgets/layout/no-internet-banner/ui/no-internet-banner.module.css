@@ -1,0 +1,38 @@
+.banner {
+  margin-top: -16.5px;
+  margin-bottom: 16.5px;
+  padding: 16px 24px;
+  background: #1a1a1a;
+  z-index: 1001;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.text {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.button {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
+  background-color: #fff;
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.9;
+}

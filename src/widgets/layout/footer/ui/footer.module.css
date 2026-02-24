@@ -1,0 +1,45 @@
+.footer {
+  padding-block: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left {
+  color: #1a1a1a;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.right a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.right a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-block: 24px;
+  }
+
+  .content {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .left {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

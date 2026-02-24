@@ -1,0 +1,53 @@
+.wrapper {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding-block: 16.5px;
+  background-color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navLinks a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.navLinks a:hover {
+  text-decoration: underline;
+}
+
+.navLinks a.active,
+.navLinks a.active:hover {
+  color: #e11313;
+  pointer-events: none;
+  text-decoration: none;
+}
+
+.active {
+  color: #e11313;
+}
+
+@media (max-width: 768px) {
+  .navLinks a:first-of-type {
+    display: none;
+  }
+}

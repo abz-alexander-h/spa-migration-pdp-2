@@ -1,0 +1,4 @@
+.next
+node_modules
+spa/node_modules
+build
