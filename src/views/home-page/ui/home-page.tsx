@@ -24,7 +24,7 @@ export function HomePage({ cars, isApiFallback }: HomePageProps) {
         />
       </Head>
       <div>
-        <Banner />
+        {/*<Banner />*/}
         <Catalog cars={cars} sectionId={CATALOG_SECTION_ID} isApiFallback={isApiFallback} />
         <Choice />
         <Benefits />
