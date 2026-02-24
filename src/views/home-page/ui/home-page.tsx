@@ -23,7 +23,6 @@ export function HomePage({ cars, isApiFallback }: HomePageProps) {
           content="Choose a car that emphasizes your status. The world's best brands with a warranty and personalized service."
         />
       </Head>
-
       <div>
         <Banner />
         <Catalog cars={cars} sectionId={CATALOG_SECTION_ID} isApiFallback={isApiFallback} />
