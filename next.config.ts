@@ -12,6 +12,12 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  turbopack: {
+    resolveAlias: {
+      '../build/polyfills/polyfill-module': './src/lib/others/modern-polyfill.js',
+      'next/dist/build/polyfills/polyfill-module': './src/lib/others/modern-polyfill.js',
+    },
+  },
 };
 
 export default nextConfig;
