@@ -21,8 +21,6 @@ export function ProductDetails({
   isProductFallback,
   isRelatedFallback,
 }: ProductDetailsProps) {
-  const isRemoteImage = product.image.urls.original.startsWith('http');
-
   return (
     <div className="container">
       {(isProductFallback || isRelatedFallback) && (
@@ -41,7 +39,6 @@ export function ProductDetails({
             alt={product.name}
             width={543}
             height={305}
-            unoptimized={isRemoteImage}
             sizes="(max-width: 768px) 100vw, 543px"
           />
         </div>
@@ -55,7 +52,6 @@ export function ProductDetails({
               alt={product.name}
               width={328}
               height={218}
-              unoptimized={isRemoteImage}
               sizes="100vw"
             />
 

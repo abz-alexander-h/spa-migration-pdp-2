@@ -168,8 +168,6 @@ export function Catalog({
       ) : (
         <div className={styles.scrollContainer} ref={scrollRef} onScroll={checkScroll}>
           {filteredCars.map((car) => {
-            const isRemoteImage = car.image.urls.original.startsWith('http');
-
             return (
               <Link
                 href={`/product/${car.id}`}
@@ -178,14 +176,7 @@ export function Catalog({
                 prefetch={false}
               >
                 <div className={styles.imageWrapper}>
-                  <Image
-                    src={car.image.urls.original}
-                    alt={car.name}
-                    width={574}
-                    height={383}
-                    unoptimized={isRemoteImage}
-                    sizes="(max-width: 768px) 295px, 574px"
-                  />
+                  <Image src={car.image.urls.original} alt={car.name} width={574} height={383} />
                 </div>
 
                 <div className={styles.info}>

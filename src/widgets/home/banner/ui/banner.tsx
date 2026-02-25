@@ -20,6 +20,7 @@ export function Banner() {
         priority
         className={styles.background}
         sizes="100vw"
+        fetchPriority={'high'}
       />
 
       <div className={clsx('container', styles.content)}>
